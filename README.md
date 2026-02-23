@@ -8,11 +8,10 @@ OrderFlow is a small order-processing system demonstrating:
 
 ## Architecture
 
-order-api -> starts workflow instance (order_processing_workflow)
-order-worker -> hosts workflow + activities
-inventory-svc <- invoked via Dapr service invocation
-payment-svc   <- invoked via Dapr service invocation
-notifier-svc  <- subscribes to pubsub topic `orders.events`
+- order-api -> starts workflow instance (order_processing_workflow)
+- order-worker -> hosts workflow + activities
+- inventory-svc <- invoked via Dapr service invocation
+- payment-svc   <- invoked via Dapr service invocation
 
 ## Prereqs (local)
 - Dapr CLI installed and initialized (`dapr init`)
