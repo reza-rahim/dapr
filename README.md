@@ -21,6 +21,7 @@ OrderFlow is a small order-processing system demonstrating:
 
 Terminal 1:
 ```
+dapr run --app-id order-api --app-port 8000 --resources-path ./components --log-level warn  -- uvicorn order-api.main:app --host 0.0.0.0 --port 8000
 ```
 
 Terminal 2:
